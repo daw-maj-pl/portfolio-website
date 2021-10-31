@@ -1,5 +1,11 @@
+import Profile from './PortfolioContainer/Home/Profile';
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <Profile />
+    </div>
+  );
 };
 
 export default App;
