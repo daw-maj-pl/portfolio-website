@@ -1,10 +1,10 @@
-import Home from './PortfolioContainer/Home/Home';
+import PortfolioContainer from './PortfolioContainer/PortfolioContainer';
 import './App.css';
 
 const App = () => {
   return (
     <div>
-      <Home />
+      <PortfolioContainer />
     </div>
   );
 };
