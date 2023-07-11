@@ -28,8 +28,10 @@ const About = forwardRef(({ scrollIntoView, linkToCV }, ref) => {
         <div className="about-me-card">
           <div className="about-me-profile"></div>
           <div className="about-me-details">
-            {description.map(desc => (
-              <div className="about-me-description">{desc}</div>
+            {description.map((desc, i) => (
+              <div className="about-me-description" key={i}>
+                {desc}
+              </div>
             ))}
             <div className="about-me-highlights">
               <div>Technologies I've been working with:</div>
