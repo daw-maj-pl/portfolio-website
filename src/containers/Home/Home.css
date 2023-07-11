@@ -1,0 +1,129 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 670px;
+  background-color: var(--primary);
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-parent {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: var(--light);
+  gap: 4rem;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-details-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.primary-text {
+  margin-top: 10px;
+}
+
+.highlighted-text {
+  color: var(--secondary);
+}
+
+.hand-emoji {
+  font-weight: 500;
+}
+
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0 1.5em 0;
+}
+
+.profile-details-role h1 {
+  font-family: cursive;
+  font-size: 1.8rem;
+}
+
+.profile-role-tagline {
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.profile-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-options .highlighted-btn:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  margin: 0;
+  border-radius: 50%;
+  box-shadow: 0 1px 0px 0px var(--light);
+}
+
+.profile-picture-background {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  background-image: url('../../assets/images/me-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease-out;
+}
+
+.profile-picture-background:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (min-width: 576px) {
+  .profile-details {
+    width: 550px;
+  }
+
+  .profile-details-role h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile-role-tagline {
+    font-size: 1.1rem;
+  }
+
+  .profile-options {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .profile-picture {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .profile-parent {
+    flex-direction: row;
+    margin-top: 2.5rem;
+  }
+}

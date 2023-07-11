@@ -1,0 +1,70 @@
+.testi-item {
+  padding: 30px;
+  border-radius: 50px 50px 50px 0px;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.testi-comment p {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.quote-left-icon {
+  margin-right: 5px;
+}
+
+.quote-right-icon {
+  margin-left: 5px;
+}
+
+.quote-left-icon,
+.quote-right-icon,
+.star-icon {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+.stars {
+  margin: 0 0 20px;
+}
+
+.stars li {
+  display: inline-block;
+  margin: 0 1px;
+}
+
+.client-info {
+  position: relative;
+  min-height: 60px;
+  padding-left: 80px;
+  padding-top: 5px;
+}
+
+.client-info img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  border-color: var(--primary);
+  border-radius: 50%;
+}
+
+.client-info h5 {
+  margin: 0 0 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.client-info p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}

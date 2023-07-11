@@ -1,0 +1,81 @@
+.resume-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-main-heading {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.heading-bullet {
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+}
+
+.resume-main-heading a {
+  font-family: 'Poppins';
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.resume-main-heading span {
+  font-family: 'Poppins';
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.heading-date {
+  align-self: baseline;
+  min-width: 86px;
+  padding: 2px 8px;
+  border-radius: 14px;
+  background-color: var(--secondary);
+  font-size: 0.6rem;
+  text-align: center;
+  color: var(--light);
+}
+
+.resume-sub-heading {
+  margin: 10px 0 0 0;
+  font-family: 'Poppins';
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.resume-heading-description {
+  font-size: 0.75rem;
+  text-align: justify;
+  color: var(--dark);
+}
+
+@media only screen and (min-width: 576px) {
+  .resume-main-heading span,
+  .resume-main-heading a {
+    font-size: 1rem;
+  }
+
+  .heading-date {
+    min-width: 100px;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+  }
+
+  .resume-sub-heading {
+    font-size: 0.9rem;
+  }
+
+  .resume-heading-description {
+    font-size: 0.8rem;
+  }
+}

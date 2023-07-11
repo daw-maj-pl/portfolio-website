@@ -1,0 +1,12 @@
+.social-media-icons {
+  color: var(--light);
+  font-size: 1.05rem;
+}
+
+.social-media-icons:hover {
+  transform: scale(1.5);
+}
+
+.social-media-link {
+  padding: 0.8em 0.8em 0.8em 0;
+}

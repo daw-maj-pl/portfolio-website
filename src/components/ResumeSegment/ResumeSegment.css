@@ -1,0 +1,43 @@
+.bullet {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  margin: 15px 0;
+  padding: 0 8px;
+  background-color: var(--primary);
+  color: var(--dark);
+  transition: width 0.6s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.selected-bullet {
+  border-left: 2px solid var(--secondary);
+  color: var(--light);
+  overflow: hidden;
+}
+
+.bullet-logo {
+  height: 16px;
+  margin: 0 30px 0 0;
+}
+
+.bullet-label {
+  font-family: 'Poppins';
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 992px) {
+  .bullet {
+    border-radius: 20px;
+    overflow: visible;
+  }
+
+  .selected-bullet {
+    width: 100%;
+    border-left-width: 0px;
+  }
+}

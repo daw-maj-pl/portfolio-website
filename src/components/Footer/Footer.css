@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 3rem 0;
+  background-color: var(--primary);
+  font-size: 0.75rem;
+  color: var(--light);
+}
+
+.arrow-up-btn {
+  position: absolute;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: var(--secondary);
+  font-size: 1.8rem;
+  color: var(--light);
+}
+
+.arrow-up-btn-icon {
+  animation: mover 0.5s infinite alternate;
+}
+
+@media only screen and (min-width: 576px) {
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin-top: 7rem;
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
